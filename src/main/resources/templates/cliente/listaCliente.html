@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<title>Listado de Clientes</title>
+</head>
+<body>
+
+ <div class="container">
+        <h3 class="mt-4 mb-4">Lista de Clientes</h3>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+    			<tr th:each="cliente : ${clientes}">
+        		<td th:text="${cliente.idcliente}">1</td>
+        		<td th:text="${cliente.nombrecli}">Nombre</td>
+        		<td th:text="${cliente.apellidocli}">Apellido</td>
+        		<td th:text="${cliente.direccion}">Dirección</td>
+        		<td th:text="${cliente.telefono}">Teléfono</td>
+        		<td th:text="${cliente.email}">Correo</td>
+        		<td th:text="${cliente.usuario}">Usuario</td>
+        		<td th:text="${cliente.password}">Contraseña</td>
+        		<td>
+            		<div class="btn-group">
+                		<form action="/cliente/obtenerid" method="post">
+                    	<input type="hidden" name="idcliente" th:value="${cliente.idcliente}">
+                    	<button class="btn btn-warning btn-sm mx-2">Actualizar</button>
+                	</form>
+                		<form action="/cliente/eliminar" method="post" >
+                        <input type="hidden" name="idcliente" th:value="${cliente.idcliente}">
+                    	
+                    	<button class="btn btn-danger btn-sm mx-2">Eliminar</button>
+                	</form>
+            		</div>
+        			</td>
+    		</tr>
+		</tbody>
+
+        </table>
+          <div class="btn">
+                
+                  <a th:href="@{/mantenimiento}" class="btn btn-primary">Volver</a>
+        
+        </div>
+    </div>
+
+</body>
+</html>
