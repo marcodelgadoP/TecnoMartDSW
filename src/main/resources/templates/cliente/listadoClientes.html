@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
 <head>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-<title>Listado de Clientes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>Listado de Clientes</title>
 </head>
 <body>
-
- <div class="container">
-        <h3 class="mt-4 mb-4">Lista de Clientes</h3>
-        <table class="table table-dark table-striped">
-            <thead>
+    <div class="container">
+        <h3 class="mt-4 mb-4">Listado de Clientes</h3>
+        <table class="table ">
+            <thead class="thead-dark">
                 <tr>
                     <th>Codigo</th>
                     <th>Nombres</th>
                     <th>Apellidos</th>
-                    <th>Dirección</th>
-                    <th>Teléfono</th>
+                    <th>DirecciÃ³n</th>
+                    <th>TelÃ©fono</th>
                     <th>Correo</th>
-                    <th>Usuario</th>
-                    <th>Contraseña</th>
+                    <th>ContraseÃ±a</th>
                     <th class="text-center">Acciones</th>
                 </tr>
             </thead>
             <tbody>
     			<tr th:each="cliente : ${clientes}">
         		<td th:text="${cliente.idcliente}">1</td>
-        		<td th:text="${cliente.nombrecli}">Nombre</td>
-        		<td th:text="${cliente.apellidocli}">Apellido</td>
-        		<td th:text="${cliente.direccion}">Dirección</td>
-        		<td th:text="${cliente.telefono}">Teléfono</td>
+        		<td th:text="${cliente.nomcliente}">Nombre</td>
+        		<td th:text="${cliente.apecliente}">Apellido</td>
+        		<td th:text="${cliente.direcliente}">DirecciÃ³n</td>
+        		<td th:text="${cliente.telefono}">TelÃ©fono</td>
         		<td th:text="${cliente.email}">Correo</td>
-        		<td th:text="${cliente.usuario}">Usuario</td>
-        		<td th:text="${cliente.password}">Contraseña</td>
+        		<td th:text="${cliente.password}">ContraseÃ±a</td>
         		<td>
             		<div class="btn-group">
                 		<form action="/cliente/obtenerid" method="post">
@@ -52,10 +49,9 @@
         </table>
           <div class="btn">
                 
-                  <a th:href="@{/mantenimiento}" class="btn btn-primary">Volver</a>
+                  <a th:href="@{/principal}" class="btn btn-primary">Inicio</a>
         
         </div>
     </div>
-
 </body>
 </html>

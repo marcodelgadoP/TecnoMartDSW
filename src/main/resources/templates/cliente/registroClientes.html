@@ -3,7 +3,7 @@
 xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 layout:decorate="~{layout/layout}">
 <head>
-<title>acualizar</title>
+<title>Registro</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 </head>
@@ -12,14 +12,9 @@ layout:decorate="~{layout/layout}">
 	<div class="container-fluid" layout:fragment="page-content" style="width: 40rem;">
 		<div >
 		<div >
-		<h1 >actualizar cliente</h1>
-		<br>
-		<form action="/cliente/actualizar" method="post" th:object="${cliente}" class="row g-3">
-		
-		<div class="form-group">
-				<input type="hidden" th:field="*{idcliente}"
-					class="form-control" id="idcliente">
-			</div>
+		<h1 >Crear Cuenta para Ordenar</h1>
+			<br>
+		<form action="/cliente/registro" method="post" th:object="${cliente}" class="row g-3">
 		
 			<div class="form-group">
 				<label for="nombre" >Nombres</label> 
@@ -57,8 +52,8 @@ layout:decorate="~{layout/layout}">
 				
 		
 			<div class="text-center" >
-			<button type="submit" class="btn btn-success">Actualizar</button>
-			<a href="/cliente/listado" class="btn btn-primary">Regresar</a>
+			<a href="/cliente/listado" type="submit" class="btn btn-success">Registrar</a>
+			<a href="/login" class="btn btn-primary">Regresar</a>
 			</div>
 			
 		</form>

@@ -13,96 +13,71 @@ public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idcliente;
-	private String nombrecli;
-	private String apellidocli;
-	private String direccion;
+	private String nomcliente;
+	private String apecliente;
+	private String direcliente;
 	private String telefono;
 	private String email;
-	private String usuario;
 	private String password;
 	
-	public Cliente(int idcliente, String nombrecli, String apellidocli, String direccion, String telefono, String email,
-			String usuario, String password) {
-		super();
-		this.idcliente = idcliente;
-		this.nombrecli = nombrecli;
-		this.apellidocli = apellidocli;
-		this.direccion = direccion;
-		this.telefono = telefono;
-		this.email = email;
-		this.usuario = usuario;
-		this.password = password;
-	}
-
-
 	public Cliente() {
 	}
-
 	
-	public String getApellidocli() {
-		return apellidocli;
+	public Cliente(int idcliente, String nomcliente, String apecliente, String direcliente, String telefono,
+			String email, String password) {
+		super();
+		this.idcliente = idcliente;
+		this.nomcliente = nomcliente;
+		this.apecliente = apecliente;
+		this.direcliente = direcliente;
+		this.telefono = telefono;
+		this.email = email;
+		this.password = password;
 	}
-
-	public void setApellidocli(String apellidocli) {
-		this.apellidocli = apellidocli;
-	}
-
-
 	public int getIdcliente() {
 		return idcliente;
 	}
-
 	public void setIdcliente(int idcliente) {
 		this.idcliente = idcliente;
 	}
-
-	public String getNombrecli() {
-		return nombrecli;
+	public String getNomcliente() {
+		return nomcliente;
 	}
-
-	public void setNombrecli(String nombrecli) {
-		this.nombrecli = nombrecli;
+	public void setNomcliente(String nomcliente) {
+		this.nomcliente = nomcliente;
 	}
-
-	public String getDireccion() {
-		return direccion;
+	public String getApecliente() {
+		return apecliente;
 	}
-
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setApecliente(String apecliente) {
+		this.apecliente = apecliente;
 	}
-
+	public String getDirecliente() {
+		return direcliente;
+	}
+	public void setDirecliente(String direcliente) {
+		this.direcliente = direcliente;
+	}
 	public String getTelefono() {
 		return telefono;
 	}
-
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+
 	
 
 }

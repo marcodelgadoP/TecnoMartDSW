@@ -11,46 +11,46 @@ import edu.cibertec.tecnomart.service.ClienteService;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-	
 	@Autowired
-	private ClienteRepository clienterepo;
-
+	private ClienteRepository repoCli;
+	
 	@Override
 	public Cliente insertarCliente(Cliente objCliente) {
-		// TODO Auto-generated method stub
-		return clienterepo.save(objCliente);
+		return repoCli.save(objCliente);
 	}
 
 	@Override
-	public List<Cliente> listadoCliente() {
-		// TODO Auto-generated method stub
-		return clienterepo.findAll();
+	public List<Cliente> listadoCliente(){
+		return repoCli.findAll();
 	}
 
 	@Override
 	public void eliminarCliente(int idcliente) {
-		// TODO Auto-generated method stub
-		clienterepo.deleteById(idcliente);
 		
+		repoCli.deleteById(idcliente);
 	}
 
 	@Override
-	public Cliente actualizarCliente(Cliente objCliente) {
-		Cliente objClienteAct=clienterepo.findById(objCliente.getIdcliente()).orElse(null);
-		objClienteAct.setNombrecli(objCliente.getNombrecli());
-		objClienteAct.setApellidocli(objCliente.getApellidocli());
-		objClienteAct.setDireccion(objCliente.getDireccion());
-		objClienteAct.setTelefono(objCliente.getTelefono());
-		objClienteAct.setEmail(objCliente.getEmail());
-		objClienteAct.setUsuario(objCliente.getUsuario());
-		objClienteAct.setPassword(objCliente.getPassword());
-		return clienterepo.save(objCliente);
+	public Cliente actualizarCliente(Cliente cliente) {
+		
+		Cliente client = repoCli.findById(cliente.getIdcliente()).orElse(null);
+		if (client != null) {
+			client.setIdcliente(cliente.getIdcliente());
+			client.setNomcliente(cliente.getNomcliente());
+			client.setApecliente(cliente.getApecliente());
+			client.setTelefono(cliente.getTelefono());
+			client.setEmail(cliente.getEmail());
+			client.setPassword(client.getPassword());
+          
+            repoCli.save(client);
+        }
+		return repoCli.save(client);
 	}
 
 	@Override
 	public Cliente obtenerCliente(int idcliente) {
-		// TODO Auto-generated method stub
-		return clienterepo.findById(idcliente).orElse(null);
+		
+		return repoCli.findById(idcliente).orElse(null);
 	}
 
 }
