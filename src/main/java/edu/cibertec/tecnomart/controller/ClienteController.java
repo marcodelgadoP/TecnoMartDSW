@@ -23,10 +23,8 @@ public class ClienteController {
 
 	
 	@GetMapping("/controlador")
-	public String controlCliente(Model model) {
-		
+	public String controlCliente(Model model) {		
 		model.addAttribute("cliente", new Cliente());
-		
 		return "cliente/registroClientes";
 	}
 	
@@ -44,34 +42,25 @@ public class ClienteController {
 	    model.addAttribute("clientes", clientes);
 	    return "cliente/listadoClientes";
 	}
-	
-	
+		
 	@PostMapping("/eliminar")
 	public String eliminarCliente(@RequestParam("idcliente") int idcliente, Model model) {
-	
-
-
 		try {
 			servicioCliente.eliminarCliente(idcliente);
-			System.out.println("SE ELIMINO CORRECTAMENTE");
+			System.out.println("se elimino el cliente");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	    
 	    List<Cliente> clientes = servicioCliente.listadoCliente();
-	    model.addAttribute("clientes", clientes);
-	    
-	   return "cliente/listadoClientes";
-	   
-	}
-	
+	    model.addAttribute("clientes", clientes);	    
+	   return "cliente/listadoClientes";  
+	}	
 	
 	@PostMapping("/obtenerid")
 	public String obtenerIdCliente(@RequestParam("idcliente") int idcliente, Model model) {
 	
 		model.addAttribute("cliente", servicioCliente.obtenerCliente(idcliente));
-	    System.out.println("El codigo recogido es: " + idcliente);
+	    System.out.println("El codigo es:" + idcliente);
 	    
 	   return "cliente/actualizarCliente";
 	}
@@ -80,10 +69,10 @@ public class ClienteController {
 	public String actualizacionCliente(@ModelAttribute Cliente cliente, @RequestParam("idcliente") int idcliente ,Model model) {
 		try {
 			model.addAttribute("cliente", servicioCliente.actualizarCliente(cliente));
-			System.out.println("El codigo recogido es: " + idcliente);
+			System.out.println("el codigo es:" + idcliente);
 			
 		} catch (Exception e) {
-			System.out.println("El codigo recogido es: " + e);
+			System.out.println("El codigo es:" + e);
 		}
 		
 	    List<Cliente> clientes = servicioCliente.listadoCliente();
