@@ -12,5 +12,10 @@ public class ProyectoController {
 	public String cliente() {
 		return "principal.html";
 	}
+	
+	@GetMapping("/registrar")
+	public String registro() {
+		return "cliente/registroClientes.html";
+	}
 
 }

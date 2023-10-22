@@ -28,9 +28,14 @@ public class ClienteController {
 		return "cliente/registroClientes";
 	}
 	
+	@GetMapping("/ir/registro")
+	public String irRegistroCliente(Model model) {
+		model.addAttribute("cliente", new Cliente());
+		return "cliente/registroClientes";
+	}
+	
 	@PostMapping("/registro")
 	public String ingresarCliente(@ModelAttribute Cliente cliente, Model model) {
-		
 		model.addAttribute("cliente", new Cliente());
 		servicioCliente.insertarCliente(cliente);
 		return "cliente/registroClientes";
