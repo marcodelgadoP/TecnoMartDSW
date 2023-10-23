@@ -22,7 +22,7 @@ public class ClienteController {
 	private ClienteService servicioCliente;
 
 	
-	@GetMapping("/controlador")
+	@GetMapping("/controlador") 
 	public String controlCliente(Model model) {		
 		model.addAttribute("cliente", new Cliente());
 		return "cliente/registroClientes";
