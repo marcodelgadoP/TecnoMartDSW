@@ -1,6 +1,396 @@
+<<<<<<< Updated upstream
 2023-10-26T05:36:56.547-05:00  INFO 105116 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 25 class path changes (0 additions, 13 deletions, 12 modifications)
 2023-10-26T05:36:57.130-05:00  INFO 105116 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
 2023-10-26T05:36:57.152-05:00  INFO 105116 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
 2023-10-26T05:36:57.420-05:00  INFO 105116 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-26T05:36:57.653-05:00  INFO 105116 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-10-26T05:36:57.830-05:00  INFO 105116 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+=======
+2023-10-25T02:58:44.824-05:00  WARN 102480 --- [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h23m4s585ms431µs700ns).
+2023-10-25T04:20:17.769-05:00  WARN 102480 --- [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h21m30s260ms492µs400ns).
+2023-10-25T16:45:04.075-05:00  WARN 102480 --- [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=12h21m11s202ms543µs800ns).
+2023-10-25T17:47:48.193-05:00  INFO 102480 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-10-25T17:47:48.417-05:00  INFO 102480 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T17:47:48.442-05:00  INFO 102480 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25T17:47:48.606-05:00  INFO 102480 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:47:48.644-05:00  INFO 102480 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-10-25T17:47:48.663-05:00  INFO 102480 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-10-25T17:47:49.373-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 102480 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T17:47:49.373-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T17:47:49.837-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T17:47:49.869-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2023-10-25T17:47:50.241-05:00  INFO 102480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T17:47:50.242-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T17:47:50.243-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T17:47:50.287-05:00  INFO 102480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T17:47:50.289-05:00  INFO 102480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 913 ms
+2023-10-25T17:47:50.585-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-10-25T17:47:50.651-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fefcaa0
+2023-10-25T17:47:50.660-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-10-25T17:47:50.680-05:00  INFO 102480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T17:47:50.717-05:00  INFO 102480 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T17:47:50.843-05:00  INFO 102480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T17:47:50.844-05:00  INFO 102480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:47:50.979-05:00  WARN 102480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T17:47:51.092-05:00  WARN 102480 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 122b53cc-0fab-4814-bb79-ef213d85f41c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-25T17:47:51.113-05:00  INFO 102480 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d5633bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5edd3ca, org.springframework.security.web.context.SecurityContextHolderFilter@1b119761, org.springframework.security.web.header.HeaderWriterFilter@11a2c929, org.springframework.security.web.csrf.CsrfFilter@d92ef26, org.springframework.security.web.authentication.logout.LogoutFilter@73bd5c7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a791566, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57f097ad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57ed2434, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22a67d13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e0b0fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@501ce706, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4632953f, org.springframework.security.web.access.ExceptionTranslationFilter@347cba2a, org.springframework.security.web.access.intercept.AuthorizationFilter@25e7a89d]
+2023-10-25T17:47:51.122-05:00  INFO 102480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T17:47:51.138-05:00  INFO 102480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T17:47:51.144-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 1.941 seconds (process running for 145616.269)
+2023-10-25T17:47:51.162-05:00  INFO 102480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-25T17:48:27.807-05:00  INFO 102480 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 23 class path changes (0 additions, 11 deletions, 12 modifications)
+2023-10-25T17:48:27.981-05:00  INFO 102480 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T17:48:28.105-05:00  INFO 102480 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:48:28.153-05:00  INFO 102480 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-10-25T17:48:28.228-05:00  INFO 102480 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-10-25T17:54:48.798-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 102480 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T17:54:48.800-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T17:54:49.051-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T17:54:49.066-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-10-25T17:54:49.211-05:00  INFO 102480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T17:54:49.218-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T17:54:49.218-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T17:54:49.263-05:00  INFO 102480 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-10-25T17:54:49.263-05:00  INFO 102480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
+2023-10-25T17:54:49.308-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-10-25T17:54:49.393-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49d328a0
+2023-10-25T17:54:49.394-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-10-25T17:54:49.401-05:00  INFO 102480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T17:54:49.436-05:00  INFO 102480 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T17:54:49.536-05:00  INFO 102480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T17:54:49.537-05:00  INFO 102480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:54:49.628-05:00  WARN 102480 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'proyectoController' defined in file [C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes\edu\cibertec\tecnomart\controller\ProyectoController.class]: Failed to instantiate [edu.cibertec.tecnomart.controller.ProyectoController]: Constructor threw exception
+2023-10-25T17:54:49.628-05:00  INFO 102480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:54:49.629-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-10-25T17:54:49.658-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-10-25T17:54:49.659-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T17:54:49.669-05:00  INFO 102480 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25T17:54:49.683-05:00 ERROR 102480 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'proyectoController' defined in file [C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes\edu\cibertec\tecnomart\controller\ProyectoController.class]: Failed to instantiate [edu.cibertec.tecnomart.controller.ProyectoController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar:3.1.5]
+	at edu.cibertec.tecnomart.TecnoMartApplication.main(TecnoMartApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.5.jar:3.1.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [edu.cibertec.tecnomart.controller.ProyectoController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.13.jar:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.13.jar:6.0.13]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "}" to complete ClassBody
+	The method addViewControllers() of type ProyectoController must override or implement a supertype method
+	Syntax error, insert "... VariableDeclaratorId" to complete FormalParameterList
+	Syntax error on token "}", delete this token
+
+	at edu.cibertec.tecnomart.controller.ProyectoController.<init>(ProyectoController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.13.jar:6.0.13]
+	... 24 common frames omitted
+
+2023-10-25T17:55:19.053-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 102480 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T17:55:19.055-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T17:55:19.240-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T17:55:19.253-05:00  INFO 102480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-10-25T17:55:19.352-05:00  INFO 102480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T17:55:19.353-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T17:55:19.353-05:00  INFO 102480 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T17:55:19.381-05:00  INFO 102480 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-10-25T17:55:19.382-05:00  INFO 102480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 324 ms
+2023-10-25T17:55:19.418-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-10-25T17:55:19.437-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@703a35d7
+2023-10-25T17:55:19.437-05:00  INFO 102480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-10-25T17:55:19.438-05:00  INFO 102480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T17:55:19.452-05:00  INFO 102480 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T17:55:19.492-05:00  INFO 102480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T17:55:19.492-05:00  INFO 102480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:55:19.600-05:00  WARN 102480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T17:55:19.726-05:00  WARN 102480 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 817a1c86-526f-4517-9105-358a0fd33bad
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-25T17:55:19.745-05:00  INFO 102480 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a66e39b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60d6800e, org.springframework.security.web.context.SecurityContextHolderFilter@16631c1e, org.springframework.security.web.header.HeaderWriterFilter@65e42064, org.springframework.security.web.csrf.CsrfFilter@45173ba6, org.springframework.security.web.authentication.logout.LogoutFilter@58c8bd61, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a4b6068, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@12afda1a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@314ff45c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1775e7f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ad5df7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@560c27bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@93df7cf, org.springframework.security.web.access.ExceptionTranslationFilter@1265c00a, org.springframework.security.web.access.intercept.AuthorizationFilter@3dd30e1]
+2023-10-25T17:55:19.753-05:00  INFO 102480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T17:55:19.769-05:00  INFO 102480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T17:55:19.777-05:00  INFO 102480 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 0.777 seconds (process running for 146064.901)
+2023-10-25T17:55:19.779-05:00  INFO 102480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-25T17:55:22.603-05:00  INFO 118992 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 118992 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T17:55:22.607-05:00  INFO 118992 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T17:55:22.686-05:00  INFO 118992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25T17:55:22.687-05:00  INFO 118992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25T17:55:23.516-05:00  INFO 118992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T17:55:23.607-05:00  INFO 118992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-10-25T17:55:24.415-05:00  INFO 118992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T17:55:24.432-05:00  INFO 118992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T17:55:24.433-05:00  INFO 118992 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T17:55:24.530-05:00  INFO 118992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T17:55:24.530-05:00  INFO 118992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1842 ms
+2023-10-25T17:55:24.688-05:00  INFO 118992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-25T17:55:25.069-05:00  INFO 118992 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e88d4fb
+2023-10-25T17:55:25.072-05:00  INFO 118992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-25T17:55:25.133-05:00  INFO 118992 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T17:55:25.241-05:00  INFO 118992 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-25T17:55:25.247-05:00  INFO 118992 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-25T17:55:25.683-05:00  INFO 118992 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T17:55:27.028-05:00  INFO 118992 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T17:55:27.032-05:00  INFO 118992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:55:27.557-05:00  WARN 118992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T17:55:27.997-05:00  WARN 118992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-25T17:55:28.027-05:00  WARN 118992 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-25T17:55:28.031-05:00  INFO 118992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:55:28.034-05:00  INFO 118992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-25T17:55:28.045-05:00  INFO 118992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-25T17:55:28.049-05:00  INFO 118992 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T17:55:28.069-05:00  INFO 118992 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25T17:55:28.093-05:00 ERROR 118992 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2023-10-25T17:57:34.407-05:00  INFO 102480 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25T17:57:34.408-05:00  INFO 102480 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-25T17:57:34.411-05:00  INFO 102480 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-25T17:59:12.247-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-25T17:59:12.268-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T17:59:12.269-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25T17:59:12.333-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T17:59:12.334-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-10-25T17:59:12.344-05:00  INFO 102480 --- [RMI TCP Connection(835)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-10-25T18:02:09.762-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 115932 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T18:02:09.764-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T18:02:09.824-05:00  INFO 115932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25T18:02:09.824-05:00  INFO 115932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25T18:02:10.627-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T18:02:10.734-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2023-10-25T18:02:11.480-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T18:02:11.495-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T18:02:11.495-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T18:02:11.579-05:00  INFO 115932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T18:02:11.579-05:00  INFO 115932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1754 ms
+2023-10-25T18:02:11.731-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-25T18:02:12.108-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dab1533
+2023-10-25T18:02:12.111-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-25T18:02:12.168-05:00  INFO 115932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T18:02:12.267-05:00  INFO 115932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-25T18:02:12.271-05:00  INFO 115932 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-25T18:02:12.694-05:00  INFO 115932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T18:02:13.814-05:00  INFO 115932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T18:02:13.819-05:00  INFO 115932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T18:02:14.257-05:00  WARN 115932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T18:02:14.662-05:00  INFO 115932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T18:02:14.716-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T18:02:14.727-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 5.508 seconds (process running for 6.49)
+2023-10-25T18:02:21.809-05:00  INFO 115932 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25T18:02:21.811-05:00  INFO 115932 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-25T18:02:21.816-05:00  INFO 115932 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-10-25T18:34:58.643-05:00  INFO 115932 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25T18:34:58.762-05:00  INFO 115932 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T18:34:58.773-05:00  INFO 115932 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25T18:34:58.821-05:00  INFO 115932 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T18:34:58.862-05:00  INFO 115932 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-25T18:34:58.880-05:00  INFO 115932 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-25T18:34:59.098-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 115932 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T18:34:59.099-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T18:34:59.400-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T18:34:59.420-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2023-10-25T18:34:59.560-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T18:34:59.562-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T18:34:59.563-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T18:34:59.598-05:00  INFO 115932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T18:34:59.599-05:00  INFO 115932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 494 ms
+2023-10-25T18:34:59.654-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-25T18:34:59.673-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45585cd3
+2023-10-25T18:34:59.673-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-25T18:34:59.675-05:00  INFO 115932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T18:34:59.685-05:00  INFO 115932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T18:34:59.729-05:00  INFO 115932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T18:34:59.730-05:00  INFO 115932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T18:34:59.819-05:00  WARN 115932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T18:34:59.938-05:00  INFO 115932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T18:34:59.954-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T18:34:59.960-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 0.897 seconds (process running for 1971.723)
+2023-10-25T18:34:59.962-05:00  INFO 115932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-25T18:35:01.401-05:00  INFO 115932 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25T18:35:01.415-05:00  INFO 115932 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T18:35:01.420-05:00  INFO 115932 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T18:35:01.420-05:00  INFO 115932 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-10-25T18:35:01.429-05:00  INFO 115932 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-10-25T18:35:01.509-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 115932 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T18:35:01.509-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T18:35:01.735-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T18:35:01.765-05:00  INFO 115932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2023-10-25T18:35:01.867-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T18:35:01.868-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T18:35:01.868-05:00  INFO 115932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T18:35:01.898-05:00  INFO 115932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T18:35:01.898-05:00  INFO 115932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2023-10-25T18:35:01.925-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-25T18:35:01.938-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75fcbccd
+2023-10-25T18:35:01.938-05:00  INFO 115932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-25T18:35:01.939-05:00  INFO 115932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T18:35:01.946-05:00  INFO 115932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T18:35:01.988-05:00  INFO 115932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T18:35:01.988-05:00  INFO 115932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T18:35:02.066-05:00  WARN 115932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T18:35:02.147-05:00  INFO 115932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T18:35:02.165-05:00  INFO 115932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T18:35:02.176-05:00  INFO 115932 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 0.695 seconds (process running for 1973.94)
+2023-10-25T18:35:02.178-05:00  INFO 115932 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-25T18:37:36.663-05:00  INFO 115932 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25T18:37:36.664-05:00  INFO 115932 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-25T18:37:36.665-05:00  INFO 115932 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-25T19:18:18.583-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-25T19:18:18.723-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T19:18:18.728-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25T19:18:18.772-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T19:18:18.809-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-10-25T19:18:18.865-05:00  INFO 115932 --- [RMI TCP Connection(87)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-10-25T19:18:22.763-05:00  INFO 101088 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 101088 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T19:18:22.767-05:00  INFO 101088 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T19:18:22.834-05:00  INFO 101088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25T19:18:22.835-05:00  INFO 101088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25T19:18:23.894-05:00  INFO 101088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T19:18:24.003-05:00  INFO 101088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2023-10-25T19:18:25.133-05:00  INFO 101088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T19:18:25.153-05:00  INFO 101088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T19:18:25.154-05:00  INFO 101088 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T19:18:25.280-05:00  INFO 101088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T19:18:25.280-05:00  INFO 101088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2444 ms
+2023-10-25T19:18:25.537-05:00  INFO 101088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-25T19:18:26.236-05:00  INFO 101088 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@126b9b5f
+2023-10-25T19:18:26.240-05:00  INFO 101088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-25T19:18:26.311-05:00  INFO 101088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T19:18:26.438-05:00  INFO 101088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-25T19:18:26.443-05:00  INFO 101088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-25T19:18:26.960-05:00  INFO 101088 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T19:18:28.527-05:00  INFO 101088 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T19:18:28.532-05:00  INFO 101088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T19:18:29.119-05:00  WARN 101088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T19:18:29.641-05:00  INFO 101088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T19:18:29.708-05:00  INFO 101088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T19:18:29.722-05:00  INFO 101088 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 7.56 seconds (process running for 8.924)
+2023-10-25T19:18:40.955-05:00  INFO 101088 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25T19:18:40.956-05:00  INFO 101088 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-25T19:18:40.958-05:00  INFO 101088 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-25T19:31:30.237-05:00  WARN 101088 --- [http-nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : "Path contains "../" after call to StringUtils#cleanPath: [.../static/css/login.css]"
+2023-10-25T20:27:04.808-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-25T20:27:04.999-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-25T20:27:05.018-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25T20:27:05.074-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T20:27:05.124-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-25T20:27:05.166-05:00  INFO 101088 --- [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-25T20:27:12.733-05:00  INFO 105116 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 105116 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-25T20:27:12.737-05:00  INFO 105116 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T20:27:12.815-05:00  INFO 105116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25T20:27:12.816-05:00  INFO 105116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25T20:27:13.723-05:00  INFO 105116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T20:27:13.823-05:00  INFO 105116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2023-10-25T20:27:14.670-05:00  INFO 105116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-25T20:27:14.690-05:00  INFO 105116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-25T20:27:14.691-05:00  INFO 105116 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25T20:27:14.823-05:00  INFO 105116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-25T20:27:14.825-05:00  INFO 105116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2008 ms
+2023-10-25T20:27:15.057-05:00  INFO 105116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-25T20:27:15.559-05:00  INFO 105116 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e89d9ee
+2023-10-25T20:27:15.562-05:00  INFO 105116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-25T20:27:15.653-05:00  INFO 105116 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T20:27:15.791-05:00  INFO 105116 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-25T20:27:15.797-05:00  INFO 105116 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-25T20:27:16.288-05:00  INFO 105116 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T20:27:17.619-05:00  INFO 105116 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-25T20:27:17.625-05:00  INFO 105116 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T20:27:18.103-05:00  WARN 105116 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T20:27:18.535-05:00  INFO 105116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-25T20:27:18.612-05:00  INFO 105116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-10-25T20:27:18.625-05:00  INFO 105116 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Started TecnoMartApplication in 6.607 seconds (process running for 7.823)
+2023-10-25T20:27:42.212-05:00  INFO 105116 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25T20:27:42.214-05:00  INFO 105116 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-25T20:27:42.215-05:00  INFO 105116 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-26T05:31:25.421-05:00  INFO 101860 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : Starting TecnoMartApplication using Java 17.0.7 with PID 101860 (C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW\target\classes started by Fabri in C:\Users\Fabri\Documentos\CIBERTEC\ProyectoIntegrador\TecnoMartDSW)
+2023-10-26T05:31:25.440-05:00  INFO 101860 --- [restartedMain] e.c.tecnomart.TecnoMartApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-26T05:31:25.506-05:00  INFO 101860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-26T05:31:25.506-05:00  INFO 101860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-26T05:31:26.473-05:00  INFO 101860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-26T05:31:26.564-05:00  INFO 101860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-10-26T05:31:27.454-05:00  INFO 101860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-10-26T05:31:27.470-05:00  INFO 101860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-26T05:31:27.471-05:00  INFO 101860 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-26T05:31:27.604-05:00  INFO 101860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-26T05:31:27.605-05:00  INFO 101860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2098 ms
+2023-10-26T05:31:27.808-05:00  INFO 101860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-26T05:31:28.253-05:00  INFO 101860 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d5c1207
+2023-10-26T05:31:28.256-05:00  INFO 101860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-26T05:31:28.327-05:00  INFO 101860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-26T05:31:28.432-05:00  INFO 101860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-26T05:31:28.437-05:00  INFO 101860 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-26T05:31:28.931-05:00  INFO 101860 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-26T05:31:30.129-05:00  INFO 101860 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-26T05:31:30.134-05:00  INFO 101860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-26T05:31:30.549-05:00  WARN 101860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-26T05:31:30.932-05:00  WARN 101860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-26T05:31:30.966-05:00  WARN 101860 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-26T05:31:30.969-05:00  INFO 101860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-26T05:31:30.975-05:00  INFO 101860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-26T05:31:30.986-05:00  INFO 101860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-26T05:31:30.990-05:00  INFO 101860 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-26T05:31:31.008-05:00  INFO 101860 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-26T05:31:31.041-05:00 ERROR 101860 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+>>>>>>> Stashed changes

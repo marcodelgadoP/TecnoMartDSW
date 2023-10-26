@@ -15,12 +15,13 @@ public class ProyectoController {
 	
 	@GetMapping("/principal")
 	public String cliente() {
-		return "principal.html";
+		return "principal";
 	}
 	
 	@GetMapping("/registrar")
 	public String registro() {
-		return "cliente/registroClientes.html";
+		return "cliente/registroClientes";
 	}
+
 
 }

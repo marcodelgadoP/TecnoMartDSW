@@ -13,8 +13,8 @@ public class Empleado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idempleado")
-    private Long id;
+
+    private Long idempleado;
 
     private String dni;
 
@@ -30,11 +30,11 @@ public class Empleado {
 
   
 	public Long getId() {
-		return id;
+		return idempleado;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		this.idempleado = id;
 	}
 
 	public String getDni() {
