@@ -17,11 +17,9 @@ public class ProyectoController {
 	public String cliente() {
 		return "principal";
 	}
-	
 	@GetMapping("/registrar")
 	public String registro() {
 		return "cliente/registroClientes";
 	}
-
 
 }

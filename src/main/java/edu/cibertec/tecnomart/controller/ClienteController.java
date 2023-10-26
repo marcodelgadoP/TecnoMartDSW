@@ -19,14 +19,17 @@ public class ClienteController {
 	
 
 	@Autowired
-	private ClienteService servicioCliente;
+	private ClienteService serviceCliente;
 
+
+	/*
+	@GetMapping("/controlador")
 	
 	@GetMapping("/controlador") 
 	public String controlCliente(Model model) {		
 		model.addAttribute("cliente", new Cliente());
 		return "cliente/registroClientes";
-	}
+	}*/
 	
 	@GetMapping("/ir/registro")
 	public String irRegistroCliente(Model model) {
@@ -37,13 +40,13 @@ public class ClienteController {
 	@PostMapping("/registro")
 	public String ingresarCliente(@ModelAttribute Cliente cliente, Model model) {
 		model.addAttribute("cliente", new Cliente());
-		servicioCliente.insertarCliente(cliente);
+		serviceCliente.insertarCliente(cliente);
 		return "cliente/registroClientes";
 	}
 	
 	@GetMapping("/listado")
 	public String listadoCliente(Model model) {
-	    List<Cliente> clientes = servicioCliente.listadoCliente();
+	    List<Cliente> clientes = serviceCliente.listadoCliente();
 	    model.addAttribute("clientes", clientes);
 	    return "cliente/listadoClientes";
 	}
@@ -51,12 +54,12 @@ public class ClienteController {
 	@PostMapping("/eliminar")
 	public String eliminarCliente(@RequestParam("idcliente") int idcliente, Model model) {
 		try {
-			servicioCliente.eliminarCliente(idcliente);
+			serviceCliente.eliminarCliente(idcliente);
 			System.out.println("se elimino el cliente");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	    List<Cliente> clientes = servicioCliente.listadoCliente();
+	    List<Cliente> clientes = serviceCliente.listadoCliente();
 	    model.addAttribute("clientes", clientes);	    
 	   return "cliente/listadoClientes";  
 	}	
@@ -64,7 +67,7 @@ public class ClienteController {
 	@PostMapping("/obtenerid")
 	public String obtenerIdCliente(@RequestParam("idcliente") int idcliente, Model model) {
 	
-		model.addAttribute("cliente", servicioCliente.obtenerCliente(idcliente));
+		model.addAttribute("cliente", serviceCliente.obtenerCliente(idcliente));
 	    System.out.println("El codigo es:" + idcliente);
 	    
 	   return "cliente/actualizarCliente";
@@ -73,14 +76,14 @@ public class ClienteController {
 	@PostMapping("/actualizar")
 	public String actualizacionCliente(@ModelAttribute Cliente cliente, @RequestParam("idcliente") int idcliente ,Model model) {
 		try {
-			model.addAttribute("cliente", servicioCliente.actualizarCliente(cliente));
+			model.addAttribute("cliente", serviceCliente.actualizarCliente(cliente));
 			System.out.println("el codigo es:" + idcliente);
 			
 		} catch (Exception e) {
 			System.out.println("El codigo es:" + e);
 		}
 		
-	    List<Cliente> clientes = servicioCliente.listadoCliente();
+	    List<Cliente> clientes = serviceCliente.listadoCliente();
 	    model.addAttribute("clientes", clientes);
 		
 		return "cliente/listadoClientes";
