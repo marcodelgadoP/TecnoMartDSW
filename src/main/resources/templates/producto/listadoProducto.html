@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+</head>
+<body>
+ <div class="container">
+        <h3 class="mt-4 mb-4">Listado de Productos</h3>
+        <table class="table ">
+            <thead class="table table-dark table-hover">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Modelo</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Marca</th>
+
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+    			<tr th:each="producto : ${productos}">
+        		<td th:text="${producto.idproducto}">1</td>
+        		<td th:text="${producto.modelo}">Modelo</td>
+        		<td th:text="${producto.descrip}">Descripcion</td>
+        		<td th:text="${producto.precio}">Precio</td>
+        		<td th:text="${producto.stock}">Stock</td>
+        		<td th:text="${producto.objMarca.nombremarca}">Marca</td>
+        		<td>
+            		<div class="btn-group">
+                		<form action="/producto/obtenerid" method="post">
+                    	<input type="hidden" name="idproducto" th:value="${producto.idproducto}">
+                    	<button class="btn btn-warning btn-sm mx-2">Actualizar</button>
+                	</form>
+                		<form action="/producto/eliminar" method="post" >
+                        <input type="hidden" name="idproducto" th:value="${producto.idproducto}">
+                    	
+                    	<button class="btn btn-danger btn-sm mx-2">Eliminar</button>
+                	</form>
+            		</div>
+        			</td>
+    		</tr>
+		</tbody>
+
+        </table>
+          <div class="btn">
+                
+                  <a th:href="@{/principal}" class="btn btn-primary">Inicio</a>
+        
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+</body>
+</html>
