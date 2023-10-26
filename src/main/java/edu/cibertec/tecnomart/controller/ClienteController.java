@@ -21,8 +21,11 @@ public class ClienteController {
 	@Autowired
 	private ClienteService serviceCliente;
 
+
 	/*
 	@GetMapping("/controlador")
+	
+	@GetMapping("/controlador") 
 	public String controlCliente(Model model) {		
 		model.addAttribute("cliente", new Cliente());
 		return "cliente/registroClientes";

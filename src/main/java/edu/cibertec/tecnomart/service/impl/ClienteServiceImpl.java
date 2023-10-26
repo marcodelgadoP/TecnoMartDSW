@@ -38,9 +38,10 @@ public class ClienteServiceImpl implements ClienteService {
 			client.setIdcliente(cliente.getIdcliente());
 			client.setNomcliente(cliente.getNomcliente());
 			client.setApecliente(cliente.getApecliente());
+			client.setDirecliente(cliente.getDirecliente());
 			client.setTelefono(cliente.getTelefono());
 			client.setEmail(cliente.getEmail());
-			client.setPassword(client.getPassword());
+			client.setPassword(cliente.getPassword());
           
             repoCli.save(client);
         }
