@@ -70,28 +70,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault(); // Evita que se envíe el formulario
-
-            // Obtiene los valores ingresados en los campos de usuario y contraseña
-            var username = document.querySelector("#username").value;
-            var password = document.querySelector("#password").value;
-
-            // Realiza la validación (puedes implementar tu lógica de autenticación aquí)
-            if (username === "user" && password === "clave") {
-                // Credenciales correctas, redirige a la página principal
-                window.location.href = "/principal";
-            } else {
-                // Credenciales incorrectas, muestra el mensaje de alerta
-                document.querySelector("#error-message").style.display = "block";
-
-                // Configura un temporizador para ocultar la alerta después de 5 segundos (5000 milisegundos)
-                setTimeout(function() {
-                    document.querySelector("#error-message").style.display = "none";
-                }, 2000); // 5000 ms = 5 segundos
-            }
-        });
-    </script>
+    
 </body>
 </html>

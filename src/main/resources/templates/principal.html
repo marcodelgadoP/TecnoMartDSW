@@ -5,60 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoMart</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .card {
+            margin: 10px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 24px;
+        }
+        .card-text {
+            font-size: 16px;
+        }
+        .button {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
 </head>
-<style>
-    h1 {
-        text-align: center;
-    }
-</style>
 <body>
-<br>
-    <h1 >Bienvenidos a TecnoMart</h1>
-    <br>
-<div class="container">
-    <div class="row ">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="img/cliente.png" alt="" class="card-img-top"></img>
-                <div class="card-body">
-                    <h5 class="card-tittel">Mantenimiento de Clientes</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing 
-                        elit!</p>
-                        <a href="/cliente/listado" class="button">Listado de Clientes</a>
-                        <br>
-                        <a href="/cliente/ir/registro" class="button">Registrar un nuevo Cliente.</a>
+    <h1 class="mt-4">Bienvenidos a TecnoMart</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/cliente.png" alt="Mantenimiento de Clientes" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento de Clientes</h5>
+                        <p class="card-text">Administre la información de sus clientes.</p>
+                        <a href="/cliente/listado" class="btn btn-primary button">Listado de Clientes</a>
+                        <a href="/cliente/ir/registro" class="btn btn-primary button">Registrar un nuevo Cliente</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="img/producto.png" alt="" class="card-img-top"></img>
-                <div class="card-body">
-                    <h5 class="card-tittel">Mantenimiento de Productos</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing 
-                        elit!</p>
-                        <a href="/producto/listadoP" class="button">Listado de Productos</a>
-                        <br>
-                        <a href="/producto/ir/registro" class="button">Registre un nuevo Producto.</a>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/producto.png" alt="Mantenimiento de Productos" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento de Productos</h5>
+                        <p class="card-text">Administre la información de sus productos.</p>
+                        <a href="/producto/listadoP" class="btn btn-primary button">Listado de Productos</a>
+                        <a href="/producto/ir/registro" class="btn btn-primary button">Registrar un nuevo Producto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="img/cliente.png" alt="" class="card-img-top"></img>
-                <div class="card-body">
-                    <h5 class="card-tittel">Mantenimiento de Empleados</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing 
-                        elit!</p>
-                        <a href="#" class="button">Listado de Empleados</a>
-                        <br>
-                        <a href="#" class="button">Registre un nuevo Empleado.</a>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="img/cliente.png" alt="Mantenimiento de Empleados" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento de Empleados</h5>
+                        <p class="card-text">Administre la información de sus empleados.</p>
+                        <a href="#" class="btn btn-primary button">Listado de Empleados</a>
+                        <a href="#" class="btn btn-primary button">Registrar un nuevo Empleado</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
+    <script>
+    window.watsonAssistantChatOptions = {
+    	    integrationID: "5e5797a2-502e-48cb-baaa-21a5b0cc9de5", // The ID of this integration.
+    	    region: "au-syd", // The region your integration is hosted in.
+    	    serviceInstanceID: "5899eebc-d2f9-4c37-a84c-fc6bf017d02a", // The ID of your service instance.
+    	    onLoad: function(instance) { instance.render(); }
+    	  };
+    	  setTimeout(function(){
+    	    const t=document.createElement('script');
+    	    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    	    document.head.appendChild(t);
+    	  });
+</script>
 </body>
 </html>

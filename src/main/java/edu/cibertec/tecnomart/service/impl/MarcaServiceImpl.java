@@ -17,7 +17,7 @@ public class MarcaServiceImpl implements MarcaService{
 	
 	@Override
 	public List<Marca> listarMarca() {
-		// TODO Auto-generated method stub
+		
 		return marcaRepo.findAll();
 	}
 

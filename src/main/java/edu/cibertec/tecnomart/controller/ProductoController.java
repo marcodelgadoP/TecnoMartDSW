@@ -33,7 +33,7 @@ public class ProductoController {
 	    List<Producto> producto = serviceProducto.listadoProducto();
 	    model.addAttribute("productos", producto);
 	    model.addAttribute("productoo", new Producto());
-	    model.addAttribute("lstmarca", serviceMarca.listarMarca());
+	    model.addAttribute("listamarca", serviceMarca.listarMarca());
 	    return "producto/listadoProducto";
 	}
 	
